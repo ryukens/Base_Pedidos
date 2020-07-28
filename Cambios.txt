@@ -1,0 +1,18 @@
+1. Insertar columna en la tabla Fabrica.
+	El archivo que implementa el cambio es "Insertar columna en tabla fabrica.sql"
+	Se ha ingresado la columna "contacto"
+	Esta columna se encuentra después de el numero_fabrica
+	La columna tiene el tipo de dato varchar con 256 caracteres de longitud
+	Se adjunta un backup de la tabla.
+	
+2. Crear filegroup Pedidos_FG3
+	El archivo que implementa el cambio es "Crear filegroup Pedidos_FG3.sql"
+	Se ha creado el filegroup Pedidos_FG3
+	Se ha asignado el archivo "Pedidos_Terciario" al filegroup.
+	
+3. Crear tabla totalArticulos
+	El archivo que implementa el cambio es "Crear tabla totalArticulos.sql"
+	Se ha creado un nuevo esquema llamado "Articulos"
+	Se ha creado la tabla totalArticulos dentro de dicho esquema y en el filegroup creado en el punto 2.
+	La tabla se maneja mediante el trigger "movimientos.gestionar_total_articulos"
+	El trigger se define en la tabla "movimientos.Cuerpo_pedido"
